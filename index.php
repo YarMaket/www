@@ -77,7 +77,7 @@ try {
 	echo "Пользователь 1 создан в: " . $user1->getCreatedAt() . "\n";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
-	echo "Ошибка при создании пользователя 1: " . $e->getMessage() . "\n";
+	echo "Ошибка при создании пользователя 1: " . $e->getMessage() . "\n" . "<br />";
 }
 
 try {
@@ -86,7 +86,7 @@ try {
 	echo "Пользователь 2 создан в: " . $user2->getCreatedAt() . "\n";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
-	echo "Ошибка при создании пользователя 2: " . $e->getMessage() . "\n";
+	echo "Ошибка при создании пользователя 2: " . $e->getMessage() . "\n" . "<br />";
 }
 
 try {
@@ -95,7 +95,7 @@ try {
 	echo "Пользователь 3 создан в: " . $user3->getCreatedAt() . "\n";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
-	echo "Ошибка при создании пользователя 3: " . $e->getMessage() . "\n";
+	echo "Ошибка при создании пользователя 3: " . $e->getMessage() . "\n" . "<br />";
 }
 
 ?>
