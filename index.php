@@ -74,7 +74,7 @@ class User
 try {
 	// Создаем пользователя с валидными данными.
 	$user1 = new User(1, 'Иван Иванов', 'ivan@mail.ru', 'password123');
-	echo "Пользователь 1 создан в: " . $user1->getCreatedAt() . "\n";
+	echo "Пользователь 1 создан в: " . $user1->getCreatedAt() . "\n" . "<br />";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
 	echo "Ошибка при создании пользователя 1: " . $e->getMessage() . "\n" . "<br />";
@@ -83,7 +83,7 @@ try {
 try {
 	// Создаем пользователя с невалидными данными (короткий пароль).
 	$user2 = new User(2, 'Петр Петров', 'petr@mail.ru', 'pass');
-	echo "Пользователь 2 создан в: " . $user2->getCreatedAt() . "\n";
+	echo "Пользователь 2 создан в: " . $user2->getCreatedAt() . "\n" . "<br />";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
 	echo "Ошибка при создании пользователя 2: " . $e->getMessage() . "\n" . "<br />";
@@ -92,7 +92,7 @@ try {
 try {
 	// Создаем пользователя с валидными данными.
 	$user3 = new User(3, 'Дмитрий Дмитров', 'dima@mail.ru', 'password456');
-	echo "Пользователь 3 создан в: " . $user3->getCreatedAt() . "\n";
+	echo "Пользователь 3 создан в: " . $user3->getCreatedAt() . "\n" . "<br />";
 } catch (InvalidArgumentException $e) {
 	// Обрабатываем исключение и выводим ошибку.
 	echo "Ошибка при создании пользователя 3: " . $e->getMessage() . "\n" . "<br />";
