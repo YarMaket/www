@@ -2,6 +2,8 @@
 require_once "Z:\home\u270067_lab1\www\Vendor\autoload.php";
 require_once "employee.php";                                                           //подключили файл с классом
 
+
+
 try{
 $ivan = new Employee(1, "Ivan", 40000, "16-08-2010");                               //создание 1 сотрудника
 echo "Стаж сотрудника ".$ivan->name." в организации ".$ivan->getAge()." лет<br/>";     //вывели для проверки стажа 1 сотрудника
