@@ -12,7 +12,7 @@ $user3 = new User(3, 'Корнев Дмитрий', 'dima@mail.ru', '23095864','
 $comment1 = new Comment($user1, 'Excellent!');
 $comment2 = new Comment($user2, 'Terrible!');
 $comment3 = new Comment($user3, 'Awesome!');
-$comment4 = new Comment($user3, 'Good');
+$comment4 = new Comment($user3, 'Good!');
 
 // Помещаем комментарии в массив
 $comments = [$comment1, $comment2, $comment3, $comment4];
