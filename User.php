@@ -35,13 +35,12 @@ class User
 	private function validateId($id)
 	{
 		if (!is_int($id) || $id <= 0) {
-			throw new InvalidArgumentException("Недопустимый идентификатор пользователя. Идентификатор пользователя должен быть положительным целым числом.");
+			throw new InvalidArgumentException("Идентификатор пользователя должен быть положительным целым числом.");
 		}
 	}
 	// Метод для валидации параметра name
 	private function validateName($name)
 	{
-		// Проверяем, что имя не пустое.
 		if (empty($name)) {
 			throw new InvalidArgumentException("Имя не может быть пустым.");
 		}
