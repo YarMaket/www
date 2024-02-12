@@ -25,7 +25,7 @@ foreach ($comments as $comment) {
 	if ($comment->getUser()->getCreatedAtDateTime() > $datetime) {
 		echo "Пользователь: " . $comment->getUser()->getName() . "\n"."<br/>";
 		echo "Комментарий: " . $comment->getText() . "\n"."<br/>";
-		echo "Написан в: " . $comment->getCreatedAt() . "\n";
+		echo "Пользователь создан: " . $comment->getCreatedAt() . "\n";
 		echo "\n";
         echo "<hr/>";
 	}
